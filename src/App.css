@@ -1,0 +1,25 @@
+body {
+  background-color: #242424;
+}
+
+.tampen-brenner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.random-point {
+  position: absolute;
+  width: 3.5vh;
+  height: 3.5vh;
+  border-radius: 100px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0;
+  background-color: pink;
+}
+.random-point:hover {
+  opacity: 1;
+}/*# sourceMappingURL=App.css.map */
