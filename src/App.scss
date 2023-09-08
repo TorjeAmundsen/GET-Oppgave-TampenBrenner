@@ -19,7 +19,9 @@ body {
   cursor: pointer;
   opacity: 0;
   background-color: pink;
+  transition: 0;
   &:hover {
     opacity: 1;
+    transition: 300ms;
   }
 }

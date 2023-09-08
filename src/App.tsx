@@ -30,8 +30,8 @@ function App() {
   };
 
   const generateRandomCoords = (e?: React.MouseEvent) => {
-    const randomX = Math.floor(Math.random() * (window.innerWidth - 20 + 1) + 20);
-    const randomY = Math.floor(Math.random() * (window.innerHeight - 20 + 1) + 20);
+    const randomX = Math.floor(Math.random() * (window.innerWidth - 67 + 1) + 34);
+    const randomY = Math.floor(Math.random() * (window.innerHeight - 67 + 1) + 34);
     setRandomPointX(randomX);
     setRandomPointY(randomY);
     if (e) handleMouseMove(e, randomX, randomY);
@@ -53,14 +53,6 @@ function App() {
       ${80 + colorIndex * 130}px circle at ${mouseX}px ${mouseY}px,
       ${colorsArray[colorIndex]},
       transparent 40%`);
-    console.log(
-      "Index:",
-      colorIndex,
-      `radial-gradient(
-      ${80 + colorIndex * 130}px circle at ${mouseX}px ${mouseY}px,
-      ${colorsArray[colorIndex]},
-      transparent 40%`
-    );
   };
 
   return (
@@ -74,10 +66,7 @@ function App() {
       >
         <div
           className={"random-point"}
-          onClick={(e) => {
-            console.log(e);
-            generateRandomCoords(e);
-          }}
+          onClick={generateRandomCoords}
           style={{ top: `${randomPointY}px`, left: `${randomPointX}px` }}
         ></div>
       </div>
